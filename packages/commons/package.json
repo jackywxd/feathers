@@ -1,0 +1,52 @@
+{
+  "name": "@feathersjs/commons",
+  "version": "4.5.5",
+  "description": "Shared Feathers utility functions",
+  "homepage": "https://feathersjs.com",
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/feathers"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feathersjs/feathers.git"
+  },
+  "author": {
+    "name": "Feathers contributor",
+    "email": "hello@feathersjs.com",
+    "url": "https://feathersjs.com"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/feathersjs/feathers/issues"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "main": "lib/",
+  "types": "lib/",
+  "scripts": {
+    "prepublish": "npm run compile",
+    "compile": "shx rm -rf lib/ && tsc",
+    "test": "mocha --config ../../.mocharc.ts.json --recursive test/**.test.ts test/**/*.test.ts"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^14.0.22",
+    "mocha": "^8.0.1",
+    "shx": "^0.3.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "gitHead": "9b9f0f13387341bdd320f1e66feda828fca2c9f2"
+}
